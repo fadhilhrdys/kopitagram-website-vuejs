@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamLight.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamBook.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamMedium.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+$primary-color: #6bc2c8;
+$secondary-color: #fff;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gotham';
+  box-sizing: border-box;
+  color: $secondary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+// navigation
+nav {
+  width: 80%;
+  margin: 1rem auto;
+  z-index: 99;
+  position: absolute;
+  left: calc(17.5% - 8%);
+
+  .container-nav {
+    display: flex;
+    top: 0;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 70%;
+  }
+
+  .nav-link {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-list {
+      font-size: 1.2rem;
+
+      i {
+        font-size: 0.8rem;
+      }
+    }
+
+    li .nav-list:hover {
+      padding-bottom: 0.2rem;
+      border-bottom: 1px solid $primary-color;
+      color: $primary-color;
+    }
+
+    .dropdown-list {
+      display: none;
+      position: absolute;
+
+      a {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid $primary-color;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .dropdown {
+      a:hover {
+        color: $primary-color;
+      }
+
+      &:hover .dropdown-list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// landing page
+@import 'landingpage';
+
+// our story page
+@import 'ourstory';
+
+// location page
+@import 'location';
+
+// gallery tomang
+@import 'gallery-tomang';
+
+// menu page
+@import 'menu';
+
+// chat us box
+.chatus-box {
+  background-color: $primary-color;
+  height: 8.5rem;
+  width: 5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  top: 20rem;
+  right: 0;
+
+  .chatus-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-arround;
+  }
+
+  span {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0;
+  }
+}
+// footer
+footer {
+  background-image: url('../img/bg-footer.png');
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  height: 400px;
+
+  .address-colom {
+    padding-left: 10vw;
+    h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: $primary-color;
+    }
+
+    h5 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-top: 0.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+    }
+
+    h6 {
+      color: $primary-color;
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+
+    .icon-sosmed {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        font-size: 1.3rem;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 800px;
+  }
+}

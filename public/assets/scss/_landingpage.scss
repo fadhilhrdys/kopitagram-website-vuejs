@@ -1,0 +1,212 @@
+main {
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  .slider-wrapper {
+    .section-wording {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .bg-section {
+        height: 100vh;
+        width: 100%;
+        z-index: 0;
+        border-radius: 0;
+      }
+
+      .section-wrap {
+        width: 80%;
+        padding-top: 6rem;
+        margin: 0.5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+        position: absolute;
+      }
+
+      .wording {
+        h1 {
+          color: $secondary-color;
+          font-size: 3rem;
+          font-weight: 800;
+          letter-spacing: 0.2rem;
+        }
+
+        button {
+          background-color: transparent;
+          padding: 0.5rem 2rem;
+          border: 1px solid $primary-color;
+          font-size: 1.2rem;
+          margin: 1.5rem 0;
+          color: $primary-color;
+        }
+
+        .btn-wording {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            color: $secondary-color;
+          }
+
+          button {
+            border: none;
+            padding: 0;
+            margin: 0;
+
+            i {
+              font-size: 1.5rem;
+              color: $secondary-color;
+              cursor: pointer;
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+
+      img {
+        width: 50%;
+        border-radius: 20px;
+      }
+    }
+
+    .section-desc {
+      background-image: url(../img/bg-desc.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 3rem 0;
+      height: 100%;
+
+      .describtion {
+        text-align: center;
+        h2 {
+          font-size: 2.5rem;
+          color: $primary-color;
+          font-weight: 800;
+        }
+        p {
+          margin: 2rem;
+          font-size: 1.1rem;
+        }
+      }
+
+      hr {
+        width: 10%;
+        margin: 2rem auto;
+      }
+
+      .gallery-desc {
+        width: 55%;
+        position: relative;
+        padding-bottom: 3.5rem;
+        margin-top: 2rem;
+
+        .swiper-list {
+          background-position: center;
+          background-size: cover;
+          width: 50%;
+          height: 50%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .swiper-pagination {
+          .swiper-pagination-bullet {
+            width: 0.7rem;
+            height: 0.7rem;
+            border: 1px solid $secondary-color;
+            opacity: 1;
+            background-color: transparent;
+          }
+
+          .swiper-pagination-bullet-active {
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .section-market-place {
+    background-image: url('../img/market-place-bg.png');
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 0;
+
+    h2 {
+      color: $primary-color;
+      font-size: 2.5rem;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    hr {
+      width: 10%;
+      margin: 2.3rem auto;
+    }
+
+    .wrapper-market-place {
+      .logo-market-place {
+        display: flex;
+        width: 55%;
+        margin: 2rem auto;
+
+        a {
+          img {
+            width: 90%;
+
+            &:hover {
+              width: 95%;
+            }
+          }
+        }
+      }
+    }
+
+    .wrapper-modern-trade {
+      .logo-modern-trade {
+        display: flex;
+        justify-content: center;
+        margin: 2.5rem 0;
+
+        img {
+          width: 20%;
+          margin: 0 1rem;
+
+          &:last-child {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-image: url('../img/bg-footer.png');
+    background-size: cover;
+
+    .address-colom {
+      display: flex;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+}
